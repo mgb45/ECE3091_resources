@@ -43,7 +43,7 @@ You can find out your raspberry pi ip address by typing `ifconfig` in a raspberr
 
 Use `ctrl-c` in the terminal to kill a running process (eg. if you want to close the notebook).
 
-### Running PyTorch on a notebook
+### Running PyTorch on your raspberry pi
 
 I found this [guide](https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html) very helpful. However, the raspberry pi is really not suited to deep learning (Consider the [Nvidia Jetson](https://developer.nvidia.com/buy-jetson) if you want a better embedded computer for this). You can run models, but don't try to train on the pi.
 
