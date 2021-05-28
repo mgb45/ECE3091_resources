@@ -21,29 +21,29 @@ Let's log into our Ubuntu raspberry pi using ssh
 ```
 ssh ubuntu@ip_address
 ```
-Once you're in, it's time to install some useful software. [tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer for running multiple programs in one terminal and remotely executing programs that will continue to run if the network drops. [htop](https://htop.dev/) is a terminal process viewer that will be useful to monitor processor load/ memory use. [vim](https://vim-adventures.com/) is a text editor for people who hate [emacs](https://en.wikipedia.org/wiki/Editor_war). The rest are things we'll use in python.
+Once you're in, it's time to install some useful software. [tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer for running multiple programs in one terminal and remotely executing programs that will continue to run if the network drops. [htop](https://htop.dev/) is a terminal process viewer that will be useful to monitor processor load/ memory use. [vim](https://vim-adventures.com/) is a text editor for people who hate [emacs](https://en.wikipedia.org/wiki/Editor_war). Most of the rest are things we'll use in python.
 
 ```
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install python3-scipy jupyter libatlas-base-dev avahi-daemon tmux htop vim
+sudo apt-get install python3-scipy jupyter libatlas-base-dev avahi-daemon tmux htop vim python3-pip python3-matplotlib libgl-dev
 ```
 
 Since we've installed the [avahi-daemon](http://avahi.org/), it's a good idea to change the hostname to something unique, eg. `ECE3091_<GROUPNO>`. Use the command 
 ```
-hostnamectl set-hostname ECE3091_<GROUPNO>
+hostnamectl set-hostname ECE3091GROUPNO
 ```
 to do this. You may need to reboot `sudo reboot` for this to take effect.
 
 Now, assuming you're on the same network, logging in to the pi remotely will be a lot easier going forward, just using:
 ```
-ssh pi@ECE3091_<GROUPNO>.local
+ssh pi@ECE3091GROUPNO.local
 ```
 
 Ok, lets continue to install some more packages on the pi.
 ``` 
 pip3 install --upgrade pip
-pip3 install --user jupyter opencv-python
+pip3 install --user jupyter opencv-python torch
 ```
 
 Next, we'll clone this repository
@@ -70,6 +70,6 @@ Use `ctrl-c` in the terminal to kill a running process (eg. if you want to close
 
 ### Running PyTorch on your raspberry pi
 
-I found this [guide](https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html) very helpful. However, the raspberry pi is really not suited to deep learning (Consider the [Nvidia Jetson](https://developer.nvidia.com/buy-jetson) if you want a better embedded computer for this). You can run models, but don't try to train on the pi.
+Note that the raspberry pi is really not suited to deep learning (Consider the [Nvidia Jetson](https://developer.nvidia.com/buy-jetson) if you want a better embedded computer for this). You can run models, but I wouldn't try to train bigger models on the pi.
 
 
