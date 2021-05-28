@@ -17,7 +17,7 @@ I'll assume you have an operating system with a terminal, and that can ssh. On w
 
 I [installed Ubuntu 20.04 server](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview) on my raspberry pi, because I wanted a 64 bit operating system for PyTorch (see below).
 
-Let's log into our Ubuntu raspberry pi using ssh - the default user and password is ubuntu
+Let's log into our Ubuntu raspberry pi using ssh
 ```
 ssh ubuntu@ip_address
 ```
