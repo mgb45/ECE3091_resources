@@ -66,7 +66,7 @@ into a browser address bar, where raspberry_pi_ip is the ip address of your rasp
 
 You can find out your raspberry pi ip address by typing `ifconfig` in a raspberry pi terminal, or going to your router settings pages and looking at the addresses of connected devices.
 
-Use `ctrl-c` in the terminal to kill a running process (eg. if you want to close the notebook).
+Use `ctrl-c` in the terminal to kill a running process (eg. if you want to close the notebook). Shutdown your pi cleanly with `sudo shutdown -h now`
 
 ### Running PyTorch on your raspberry pi
 
