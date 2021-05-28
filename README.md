@@ -21,7 +21,7 @@ Let's log into our Ubuntu raspberry pi using ssh
 ```
 ssh ubuntu@ip_address
 ```
-Once you're in, it's time to install some useful software. [tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer for running multiple programs in one terminal. [htop](https://htop.dev/) is a terminal process viewer that will be useful to monitor processor load/ memory use. [vim](https://vim-adventures.com/) is a text editor for people who hate [emacs](https://en.wikipedia.org/wiki/Editor_war). The rest are things we'll use in python.
+Once you're in, it's time to install some useful software. [tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer for running multiple programs in one terminal and remotely executing programs that will continue to run if the network drops. [htop](https://htop.dev/) is a terminal process viewer that will be useful to monitor processor load/ memory use. [vim](https://vim-adventures.com/) is a text editor for people who hate [emacs](https://en.wikipedia.org/wiki/Editor_war). The rest are things we'll use in python.
 
 ```
 sudo apt-get update
