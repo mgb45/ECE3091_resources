@@ -21,10 +21,11 @@ Let's log into our Ubuntu raspberry pi using ssh - the default user and password
 ```
 ssh ubuntu@ip_address
 ```
-Once you're in, it's time to install some useful software:
+Once you're in, it's time to install some useful software. [tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer for running multiple programs in one terminal. [htop](https://htop.dev/) is a terminal process viewer that will be useful to monitor processor load/ memory use. [vim](https://vim-adventures.com/) is a text editor for people who hate [emacs](https://en.wikipedia.org/wiki/Editor_war). The rest are things we'll use in python.
 
 ```
 sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install python3-scipy jupyter libatlas-base-dev avahi-daemon tmux htop vim
 ```
 
@@ -39,7 +40,7 @@ Now, assuming you're on the same network, logging in to the pi remotely will be 
 ssh pi@ECE3091_<GROUPNO>.local
 ```
 
-Ok, lets continue to install some packages on the pi.
+Ok, lets continue to install some more packages on the pi.
 ``` 
 pip3 install --upgrade pip
 pip3 install --user jupyter opencv-python
