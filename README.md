@@ -29,7 +29,7 @@ sudo apt-get upgrade
 sudo apt-get install python3-scipy jupyter libatlas-base-dev avahi-daemon tmux htop vim python3-pip python3-matplotlib libgl-dev
 ```
 
-Since we've installed the [avahi-daemon](http://avahi.org/), it's a good idea to change the hostname to something unique, eg. `ECE3091_<GROUPNO>`. Use the command 
+Since we've installed the [avahi-daemon](http://avahi.org/), it's a good idea to change the hostname to something unique, eg. `ECE3091GROUPNO`. Use the command 
 ```
 hostnamectl set-hostname ECE3091GROUPNO
 ```
@@ -62,7 +62,7 @@ You can now access the notebook running on the raspberry pi using any other comp
 ```
 http://raspberry_pi_ip:8888/
 ```
-into a browser address bar, where raspberry_pi_ip is the ip address of your raspberry pi. Eg. mine is 192.168.20.14.
+into a browser address bar, where `raspberry_pi_ip` is the ip address of your raspberry pi. Eg. mine is `192.168.20.14`.
 
 You can find out your raspberry pi ip address by typing `ifconfig` in a raspberry pi terminal, or going to your router settings pages and looking at the addresses of connected devices.
 
