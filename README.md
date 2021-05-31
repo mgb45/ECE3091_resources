@@ -15,7 +15,7 @@ I recommend you prototype on an alternative machine and not directly on your ras
 
 I'll assume you have an operating system with a terminal, and that can ssh. On windows, check out the [windows subsystem for linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10), and [putty](https://www.putty.org/).
 
-I [installed Ubuntu 20.04 server](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview) on my raspberry pi, because I wanted a 64 bit operating system for PyTorch (see below).
+I [installed Ubuntu 20.04 server](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview) on my raspberry pi, because I wanted a 64 bit operating system for PyTorch (see below). You could follow a similar process for the Raspbian Buster distribution pre-installed on your sd cards, but you won't be able to use PyTorch if you do this. 
 
 Let's log into our Ubuntu raspberry pi using ssh
 ```
