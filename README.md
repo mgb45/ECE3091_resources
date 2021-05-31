@@ -9,7 +9,7 @@ ECE3091 is a design unit at Monash University, where students are required to de
 
 # Setting up your raspberry pi to run these notebooks
 
-I recommend you run these notebooks on an alternative machine and not directly on your raspberry pi, as this will be quite slow. However, if you would like to configure your raspberry pi to use jupyter follow the steps below.
+I recommend you prototype on an alternative machine and not directly on your raspberry pi, as this will be quite slow. However, if you would like to configure your raspberry pi to use jupyter follow the steps below.
 
 ## Initial Setup
 
