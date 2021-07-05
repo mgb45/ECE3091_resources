@@ -10,7 +10,7 @@ ECE3091/ ENG5105 is a design unit at Monash University, where students are requi
 
 # Setting up your raspberry pi to run these notebooks
 
-I recommend you prototype on an alternative machine and not directly on your raspberry pi, as this will be quite slow. However, if you would like to configure your raspberry pi to use jupyter follow the steps below.
+If you would like to configure your raspberry pi to use jupyter follow the steps below.
 
 ## Initial Setup
 
