@@ -27,7 +27,7 @@ Once you're in, it's time to install some useful software. [tmux](https://github
 ```
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install python3-scipy jupyter libatlas-base-dev avahi-daemon tmux htop vim python3-pip python3-matplotlib libgl-dev net-tools
+sudo apt-get install git python3-scipy jupyter libatlas-base-dev avahi-daemon tmux htop vim python3-pip python3-matplotlib libgl-dev net-tools
 ```
 
 Since we've installed the [avahi-daemon](http://avahi.org/), it's a good idea to change the hostname to something unique, eg. `ECE3091GROUPNO`. Use the command 
