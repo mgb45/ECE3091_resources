@@ -38,6 +38,7 @@ void camera_capture_example(int camera_id)
     }
 
     camera.release();
+    video_writer.release();
 
 }
 
