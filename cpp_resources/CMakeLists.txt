@@ -18,3 +18,8 @@ target_include_directories(
 )
 
 add_executable (gpio_test gpio_test.cpp)
+
+target_link_libraries(
+    gpio_test
+    gpiodcxx
+)
