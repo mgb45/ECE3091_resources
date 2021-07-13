@@ -7,6 +7,8 @@ ECE3091/ ENG5105 is a design unit at Monash University, where students are requi
 * [Simple blob (colour/shape) detection strategy](https://github.com/mgb45/ECE3091_resources/blob/main/Image_processing_detection_strategy.ipynb)
 * [Simple CNN (2D regression) detection strategy](https://github.com/mgb45/ECE3091_resources/blob/main/Machine_learning_detection_strategy.ipynb)
 
+There are also some nice [c++ programming resources](./cpp_resources) if you prefer to program using this language.
+
 
 # Setting up your raspberry pi to run these notebooks
 
