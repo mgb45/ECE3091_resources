@@ -25,6 +25,8 @@ ffmpeg -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mkv
 
 # GPIO Hardware Interaction
 
+To get the correct permisssions for the Hardware Interfaces, either you can setup a new usergroup with some perms that unlock the required interfaces, or you can just run the executable with gpio/pwm things with sudo (pls don't break anything).
+
 ## GPIO Pins
 
 Using the gpioinfo tool you can determine the target line you need for the named pin. From this line name, you can use the example code supplied to control it, setup callbacks etc. An example output for an Nvidia Jetson Nano 2GB is shown below.
