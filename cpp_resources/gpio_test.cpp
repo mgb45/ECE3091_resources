@@ -1,3 +1,5 @@
+// Example on how to use libgpio for chardev interface (sysfs is deprecated)
+
 #include <chrono>
 #include <iostream>
 #include <thread>
@@ -10,8 +12,8 @@ int main(int argc, char** argv)
 
     chip.open("/dev/gpiochip0", gpiod::chip::OPEN_BY_PATH);
 
-    // Pin 3 on board, refer to diagram for pin to gpio mapping
-    auto gpio_pin = chip.get_line(2); 
+    // Pin 3 on raspberry pi board, refer to diagram for pin to gpio mapping or use gpioinfo
+    auto gpio_pin = chip.get_line(149); 
     auto request = gpiod::line_request();
     request.request_type = gpiod::line_request::DIRECTION_OUTPUT;
     gpio_pin.request(request);
