@@ -67,6 +67,12 @@ ls /sys/class/pwm # See what chips are available
 cat /sys/class/pwm/pwmchip0/npwm # See how many channels on a chip
 ```
 
+For a Jetson Nano, the PWM modules are already added to the device tree. For a Raspberry Pi with Ubuntu20.04, you need to add the following lines below to your config.txt (just like when you added start_x=1 etc for using the camera).
+
+```
+dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
+```
+
 # Compilation Instructions
 
 First run the install requirements install script. If you are using a jetson nano or some OS which by default uses an older version of libpiod that is missing c++ bindings, you need to compile install a later version of [libgpoid](https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git) from source, following their instructions on how to compile and install (you may also need to add "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib" to your ~/.bashrc and run "sudo ldconfig").
