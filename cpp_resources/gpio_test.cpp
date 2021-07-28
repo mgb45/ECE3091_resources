@@ -12,8 +12,7 @@ int main(int argc, char** argv)
 
     chip.open("/dev/gpiochip0", gpiod::chip::OPEN_BY_PATH);
 
-    // Pin 3 on raspberry pi board, refer to diagram for pin to gpio mapping or use gpioinfo
-    auto gpio_pin = chip.get_line(149); 
+    auto gpio_pin = chip.get_line(26); // "GPIO 26" or Pin 37 on raspberry pi board
     auto request = gpiod::line_request();
     request.request_type = gpiod::line_request::DIRECTION_OUTPUT;
     gpio_pin.request(request);
